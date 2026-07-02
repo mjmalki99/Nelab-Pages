@@ -1,36 +1,151 @@
-cat > privacy.html << 'EOF'
 <!DOCTYPE html>
 <html>
 <head>
   <title>Nelab Privacy Policy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: Arial; max-width: 800px; margin: 40px auto; line-height: 1.6; }
-    h1 { color: #333; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1 { color: #000; margin-top: 30px; }
+    h2 { color: #222; margin-top: 25px; }
+    .meta { color: #666; font-size: 14px; margin-bottom: 20px; }
   </style>
 </head>
 <body>
   <h1>Nelab Privacy Policy</h1>
-  <p>Last updated: July 2, 2026</p>
+  <p class="meta">Last updated: July 2, 2026</p>
 
-  <h2>Data We Collect</h2>
+  <h2>1. Introduction</h2>
+  <p>Nelab ("we," "us," "our," or "Company") operates the Nelab mobile application. This Privacy Policy explains how we collect, use, disclose, and otherwise handle your information when you use our app, website, and related services.</p>
+
+  <h2>2. Information We Collect</h2>
+
+  <h3>2.1 Account Information</h3>
+  <p>When you create an account, we collect:</p>
   <ul>
-    <li>Account information (email, phone, name)</li>
-    <li>Location data</li>
-    <li>Photos and images</li>
-    <li>Chat and messaging data</li>
+    <li>Email address</li>
+    <li>Phone number</li>
+    <li>Name and profile information</li>
+    <li>Password (encrypted)</li>
+    <li>Profile photo (optional)</li>
   </ul>
 
-  <h2>How We Use Your Data</h2>
-  <p>We use your data to provide the Nelab app services, improve our app, and process payments.</p>
+  <h3>2.2 Location Data</h3>
+  <p>We collect your location (with your permission) to:</p>
+  <ul>
+    <li>Find nearby venues and sessions</li>
+    <li>Show distance information</li>
+  </ul>
+  <p>You can disable location sharing in your device settings at any time.</p>
 
-  <h2>Data Storage</h2>
-  <p>Your data is stored securely on Supabase servers.</p>
+  <h3>2.3 Photos and Images</h3>
+  <p>You may upload photos to:</p>
+  <ul>
+    <li>Your profile</li>
+    <li>Community posts</li>
+    <li>Venue and session information</li>
+  </ul>
+  <p>These photos are stored securely on our servers and shared based on your privacy settings.</p>
 
-  <h2>Your Rights</h2>
-  <p>You can request to delete your account and data by contacting us.</p>
+  <h3>2.4 Communications Data</h3>
+  <p>We collect:</p>
+  <ul>
+    <li>Chat messages between users</li>
+    <li>Messages in groups and communities</li>
+    <li>Customer support communications</li>
+  </ul>
 
-  <h2>Contact</h2>
-  <p>Email: <your-email></p>
+  <h3>2.5 Payment Information</h3>
+  <p>Payment processing is handled by Thawani, a third-party payment processor. We do not store your credit card information. Thawani collects and processes payment data according to their privacy policy.</p>
+
+  <h3>2.6 Device Information</h3>
+  <p>We automatically collect:</p>
+  <ul>
+    <li>Device type and operating system</li>
+    <li>App version</li>
+    <li>Device identifiers</li>
+    <li>Crash reports and analytics</li>
+  </ul>
+
+  <h3>2.7 Usage Data</h3>
+  <p>We track:</p>
+  <ul>
+    <li>Features you use</li>
+    <li>Time spent in app</li>
+    <li>Bookings and interactions</li>
+    <li>Search queries</li>
+  </ul>
+
+  <h2>3. How We Use Your Information</h2>
+  <p>We use collected information to:</p>
+  <ul>
+    <li>Provide and improve the Nelab app</li>
+    <li>Process bookings and payments</li>
+    <li>Send notifications about bookings and messages</li>
+    <li>Find venues and sessions near you</li>
+    <li>Enable community features (groups, chat, posts)</li>
+    <li>Personalize your experience</li>
+    <li>Fix bugs and prevent fraud</li>
+    <li>Comply with legal obligations</li>
+    <li>Respond to customer support requests</li>
+  </ul>
+
+  <h2>4. Data Sharing</h2>
+  <p>We do not sell your personal information. We may share data with:</p>
+  <ul>
+    <li><strong>Service Providers:</strong> Supabase (database), Thawani (payments), Expo (app hosting)</li>
+    <li><strong>Legal Requirements:</strong> If required by law or to protect our rights</li>
+    <li><strong>Community Users:</strong> Your profile and messages are visible to other app users based on your settings</li>
+  </ul>
+
+  <h2>5. Data Storage & Security</h2>
+  <p>Your data is stored on Supabase servers with industry-standard encryption. We implement technical and organizational measures to protect your information against unauthorized access and loss.</p>
+  <p>However, no method of transmission over the Internet is 100% secure. We cannot guarantee absolute security.</p>
+
+  <h2>6. Your Rights</h2>
+  <p>You have the right to:</p>
+  <ul>
+    <li><strong>Access:</strong> Request a copy of your personal data</li>
+    <li><strong>Correction:</strong> Update inaccurate information</li>
+    <li><strong>Deletion:</strong> Request deletion of your account and data</li>
+    <li><strong>Opt-out:</strong> Disable notifications, location sharing, and analytics</li>
+  </ul>
+  <p>To exercise these rights, contact us at the email below.</p>
+
+  <h2>7. Permissions</h2>
+  <p>Our app requests the following permissions:</p>
+  <ul>
+    <li><strong>Photo Library:</strong> To upload venue and session images</li>
+    <li><strong>Camera:</strong> To take photos for profile and posts</li>
+    <li><strong>Location:</strong> To find nearby venues and sessions</li>
+    <li><strong>Microphone:</strong> For voice messaging (future feature)</li>
+    <li><strong>Notifications:</strong> To notify you about bookings and messages</li>
+  </ul>
+  <p>You can revoke these permissions in your device settings at any time.</p>
+
+  <h2>8. Children's Privacy</h2>
+  <p>Nelab is not intended for users under 13. We do not knowingly collect information from children under 13. If we learn we have collected personal information from a child under 13, we will delete it promptly.</p>
+
+  <h2>9. Third-Party Links</h2>
+  <p>Our app may contain links to third-party websites. We are not responsible for their privacy practices. Please review their privacy policies before sharing your information.</p>
+
+  <h2>10. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by updating the "Last updated" date and/or sending an in-app notification.</p>
+
+  <h2>11. Contact Us</h2>
+  <p>If you have questions about this Privacy Policy or our privacy practices, please contact us at:</p>
+  <p>
+    <strong>Email:</strong> <a href="mailto:privacy@nelab.app">privacy@nelab.app</a>
+  </p>
+
+  <hr style="margin-top: 40px; border: none; border-top: 1px solid #eee;">
+  <p style="font-size: 12px; color: #999;">© 2026 Nelab. All rights reserved.</p>
 </body>
 </html>
-EOF
