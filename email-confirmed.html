@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Email Confirmed — Nelab</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="nelab.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="nelab.png" alt="Nelab logo">Nelab</a>
+  </header>
+
+  <h1>Thank you for confirming your email!</h1>
+  <p class="meta">Yallah Nelab! 🎉</p>
+  <p>Your account is now verified. Tap the button below to jump back into the app.</p>
+  <a id="openApp" class="btn" href="nelab://confirm-email">Open Nelab</a>
+
+  <footer>
+    <p class="footnav">
+      <a href="index.html">Home</a> ·
+      <a href="terms.html">Terms &amp; Conditions</a> ·
+      <a href="privacy.html">Privacy Policy</a>
+    </p>
+    <p class="copyright">© 2026 Nelab. All rights reserved. · <a href="mailto:support@nelab.app">support@nelab.app</a></p>
+  </footer>
+
+  <script>
+    var params = new URLSearchParams(window.location.search);
+    var code = params.get("code") || "";
+    if (code) {
+      document.getElementById("openApp").href = "nelab://confirm-email?code=" + encodeURIComponent(code) + "&type=signup";
+    }
+  </script>
+</body>
+</html>
